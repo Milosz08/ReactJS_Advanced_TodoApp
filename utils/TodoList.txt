@@ -1,0 +1,28 @@
+Popularna aplikacja Todo napisana przy użyciu biblioteki ReactJS z wykorzystaniem Globalnego Stora (wbudowany w reacta
+Context Store).
+
+Możliwości aplikacji:
+- dodawanie kolejnych zadań do listy,
+- usuwanie pojedyńczych zadań z listy,
+- czyszczenie całej listy,
+- odznaczanie jednego, konkretnego zadania jako zrobione
+- odznaczanie wszystkich zadań jako zrobione
+
+Dodatkowo, po kliknięciu na zadanie otwarcie modala z możliwością:
+- edycji tytułu,
+- edycji opisu,
+- możliwością zmiany priorytetu zadania (możliwe 3 priorytety: low - zielony, medium - żółty, high - czerwony),
+- zmiana daty końca zadania
+
+Podział na komponenty:
+- App (komponent główny),
+- Store (przechowywanie listy zadań),
+- EditModal (okno do edycji zadania),
+- DeleteModal (okno do usuwania zadania),
+
+Dodatkowo:
+- możliwość podpięcia bazy danych (przykład z axiosem i API NodeJS), trzy metody przekazywane w propsach: zaciąganie z bazy
+  danych wszystkich zadań, usuwanie jednego zadania, usuwanie wszystkich zadań, edycja zadania, dodawanie nowego zadania
+
+
+...
