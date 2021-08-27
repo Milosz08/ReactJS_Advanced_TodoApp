@@ -24,5 +24,8 @@ Dodatkowo:
 - możliwość podpięcia bazy danych (przykład z axiosem i API NodeJS), trzy metody przekazywane w propsach: zaciąganie z bazy
   danych wszystkich zadań, usuwanie jednego zadania, usuwanie wszystkich zadań, edycja zadania, dodawanie nowego zadania
 
-
-...
+W głównych propsach możliwość przekazywania:
+- defaultValues? (properta boolean, jeśli true zaczytuje domyślną tablicę, jeśli false, zostawia pustą tablicę),
+- ifActiveDB (properta boolean, jeśli true, możliwa do użycia baza danych, properta obowiązkowa),
+- getDB()? (callback, pobierający wszystkie elementy z bazy danych => zwraca obiekt z danymi),
+- updateDB()? (callback aktualizujący bazę danych => przyjmuje obiekt z danymi),
