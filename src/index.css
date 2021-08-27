@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, input, button, textarea {
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --mainTextColour: #535353;
+    --magentaColour: #5E72E4;
+    --darkenMagentaColour: #4451a8;
+    --placeholderColour: #C4C4C4;
+    --lightGrayColour: #F4F5F7;
+    --lightLightGrayColour: #fcfcfc;
+    --darkGrayColour: #B3B2B2;
+    --normalGrayColour: #898989;
+    --darkenGrayColour: #ECEBEB;
+
+    --totalBackground: #E5E7FD;
+    --totalForeground: #5D62C0;
+    --successBackground: #CBFADF;
+    --successForeground: #5a8270;
+    --pendingBackground: #FFE4DC;
+    --pendingForeground: #CF5C39;
+
+    --nonePriority: #5E72E4;
+    --lowPriority: #62AF62;
+    --mediumPriority: #F5CB0D;
+    --highPriority: #E22B2B;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--lightGrayColour);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--darkGrayColour);
 }
