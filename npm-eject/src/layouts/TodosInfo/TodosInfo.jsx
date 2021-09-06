@@ -12,7 +12,7 @@
  */
 
 import React, { useContext } from 'react';
-import { StoreContext } from '../../../store/StoreProvider';
+import { StoreContext } from '../../utils/StoreProvider';
 
 import { TodosInfoContainer, TodosInfoSection } from './TodosInfoStyles';
 

@@ -12,10 +12,10 @@
  */
 
 import React, { useContext, useState } from 'react';
-import { PRIORITY } from '../../../utils/defaultTodos';
+import { PRIORITY } from '../../utils/defaultTodos';
 
 import { Input, InputContainer, Button, Arrow } from './InjectNewTaskStyles';
-import { StoreContext, ACTIONS } from '../../../store/StoreProvider';
+import { StoreContext, ACTIONS } from '../../utils/StoreProvider';
 
 /**
  * @details Component responsible for generating the input field for a new task to the Todo list.

@@ -14,8 +14,8 @@
 import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import { StoreContext, ACTIONS } from '../../../store/StoreProvider';
-import MONTHS from '../../../utils/months';
+import { StoreContext, ACTIONS } from '../../utils/StoreProvider';
+import MONTHS from '../../utils/months';
 
 import {
     TasksContainer, SingleTask, TaskTitle, TaskPriority, TaskDate, TaskSetRemove, Checkbox

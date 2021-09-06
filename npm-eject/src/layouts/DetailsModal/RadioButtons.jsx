@@ -14,7 +14,7 @@
 import React from 'react';
 
 import { RadioContainer, RadioWrapper } from './RadioButtonsStyles';
-import { PRIORITY } from '../../../utils/defaultTodos';
+import { PRIORITY } from '../../utils/defaultTodos';
 
 /**
  * Constant array that holds all the priority values.

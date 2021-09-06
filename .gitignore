@@ -10,6 +10,7 @@
 
 # production
 /build
+/npm-eject
 
 # misc
 .DS_Store

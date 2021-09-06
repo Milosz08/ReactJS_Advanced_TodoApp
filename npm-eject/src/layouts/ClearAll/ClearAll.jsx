@@ -13,7 +13,7 @@
 
 import React, { useContext } from 'react';
 import { ButtonsContainer, ButtonTodo } from './ClearAllStyles';
-import { StoreContext, ACTIONS } from '../../../store/StoreProvider';
+import { StoreContext, ACTIONS } from '../../utils/StoreProvider';
 
 /**
  * @details Component that generates two buttons to manage the entire Todo list. One is responsible

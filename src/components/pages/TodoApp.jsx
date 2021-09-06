@@ -1,5 +1,5 @@
 /**
- * @file TodoApp.jsx
+ * @file index.jsx
  * @author Miłosz Gilga (gilgamilosz451@gmail.com)
  * @brief TypeScript React Stateless functional component (simplify state with React Hooks).
  *
@@ -29,7 +29,7 @@ import DetailsModal from '../layouts/DetailsModal/DetailsModal';
  * @param getDBcallback? - callback function returning an array of objects from the database.
  * @param updateDBcallback? - callback function with updated task table in its parameters.
  *
- * @returns {JSX.Element}
+ * @returns { JSX.Element }
  */
 const TodoApp = ({
     ifActiveDB,

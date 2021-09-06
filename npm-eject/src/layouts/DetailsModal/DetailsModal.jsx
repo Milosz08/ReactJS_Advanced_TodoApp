@@ -12,7 +12,7 @@
  */
 
 import React, { useEffect, useContext, useState } from 'react';
-import { ACTIONS, StoreContext } from '../../../store/StoreProvider';
+import { StoreContext, ACTIONS } from '../../utils/StoreProvider';
 
 import RadioButtons from './RadioButtons';
 
