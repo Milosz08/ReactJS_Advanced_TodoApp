@@ -54,30 +54,30 @@ const StoreProvider = ({ children, propsValues }) => {
         switch(action.type) {
             case ADD:
                 const returnADD = [action.newTask].concat(state);
-                if(ifActiveDB) { updateDBcallback(returnADD) }
+                if(ifActiveDB) { updateDBcallback(null, ADD, null) }
                 return returnADD;
             case REMOVE:
                 const returnREMOVE = state.filter(task => task._id !== action.id);
-                if(ifActiveDB) { updateDBcallback(returnREMOVE) }
+                if(ifActiveDB) { updateDBcallback(null, REMOVE, action.id) }
                 return returnREMOVE;
             case EDIT:
                 const editCopy = [...state];
                 const editTaskIndex = state.findIndex(task => task._id === action.id);
                 editCopy[editTaskIndex] = action.editTask;
-                if(ifActiveDB) { updateDBcallback(editCopy) }
+                if(ifActiveDB) { updateDBcallback(editCopy[editTaskIndex], EDIT, action.id) }
                 return editCopy;
             case FINISH:
                 const finishCopy = [...state];
                 const finishTaskIndex = state.findIndex(task => task._id === action.id);
                 finishCopy[finishTaskIndex].statusEnd = finishCopy[finishTaskIndex].statusEnd ? false : true;
-                if(ifActiveDB) { updateDBcallback(finishCopy) }
+                if(ifActiveDB) { updateDBcallback(finishCopy[finishTaskIndex], EDIT, action.id) }
                 return finishCopy;
             case REMOVE_ALL:
-                if(ifActiveDB) { updateDBcallback([]) }
+                if(ifActiveDB) { updateDBcallback(state, 'REMOVE_ALL', null) }
                 return [];
             case DONE_ALL:
                 const returnDONE_ALL = state.map(task => ({ ...task, statusEnd: true }));
-                if(ifActiveDB) { updateDBcallback(returnDONE_ALL) }
+                if(ifActiveDB) { updateDBcallback(returnDONE_ALL, 'EDIT_ALL', null) }
                 return returnDONE_ALL;
             default:
                 throw new Error(`Unexpected reducer action. ${action.type} action not exist.`);

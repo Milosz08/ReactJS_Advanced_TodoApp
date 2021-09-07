@@ -1,10 +1,11 @@
 {
   "name": "advanced-todo-app-reactjs",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "Advanced Todo App written in JavaScript and using ReactJS library",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "source": "src/index.jsx",
+  "homepage": "https://todoapp.miloszgilga.pl",
   "scripts": {
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
