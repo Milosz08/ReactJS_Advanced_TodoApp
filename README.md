@@ -51,7 +51,7 @@ All `updateDBcallback()` function parameters:
       description: string(required),
       initDate: Date type (required),
       priority: string (required),
-      statusEnd: boolean
+      statusEnd: boolean (required)
    } 
 ```
 
@@ -137,7 +137,7 @@ If you want to clone and work with this repository, use the built-in interface i
 3. Type `git clone` and then paste the URL you copied earlier.
   
 ```
-$ git clone https://github.com/Milosz08/ReactJS_Web_Application_POLSL
+$ git clone https://github.com/Milosz08/ReactJS_Advanced_TodoApp
 ```
 
 ## License
